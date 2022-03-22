@@ -2,14 +2,23 @@
 
 namespace FizzBuzz
 {
+
+    public static class ExtensionMethod
+    {
+        public static bool isMultipleOf (
+            this int num, 
+            int multiplier
+        ) => num % multiplier == 0;
+    }
     public class FizzBuzz
     {
+
         public string ConvertNumber(int num)
         {
             string result = num switch {
-                int n when n % 15 == 0 => "FizzBuzz",
-                int n when n % 3 == 0 => "Fizz",
-                int n when n % 5 == 0 => "Buzz",
+                int n when n.isMultipleOf(15) => "FizzBuzz",
+                int n when n.isMultipleOf(3) => "Fizz",
+                int n when n.isMultipleOf(5) => "Buzz",
                 _ => Convert.ToString(num)
             };
 
