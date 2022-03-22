@@ -3,7 +3,7 @@ using FluentAssertions;
 
 namespace FizzBuzz.Tests;
 
-public class Tests
+public class FizzBuzz_ConvertNumber_Test
 {
 
     [TestFixture]
