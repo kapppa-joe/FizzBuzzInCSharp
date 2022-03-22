@@ -8,6 +8,9 @@ https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-nunit
 NUnit
 FluentAssertions
 
+## How to run the FizzBuzz
+```dotnet run```
+
 ## How to run test
 run test spec
 ```shell
